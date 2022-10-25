@@ -4,7 +4,7 @@ public class LeapYearPrinter {
     public void isLeapYear(int year) {
         boolean remainder;
 
-        remainder = ((year % 4 == 0) && ((year % 400 == 0) || (year % 100 != 0)));
+        remainder = (((year % 400 == 0) || (year % 100 != 0)));
         int remainderInt = (remainder) ? 1 : 0;
         switch (remainderInt) {
             case 1 -> System.out.println("leap");
